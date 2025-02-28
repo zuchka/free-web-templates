@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travellian - Start your unforgettable journey</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Rubik:wght@400;500&family=Mulish:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="travel-app">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/f6c42aeece9b1ec8cde26469cb390b40214840e55f9684ac5fec324c3b1a67e9?placeholderIfAbsent=true"
+          alt="Travel destination background"
+          class="hero-bg"
+        />
+
+        <!-- Header -->
+        <header class="header">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/69fa85e340c698b19d4b1815a347d432c2e18bd073ad95d5acc688010cae642b?placeholderIfAbsent=true"
+                alt="Travellian Logo"
+              />
+            </a>
+          </div>
+          <nav class="main-menu">
+            <a href="index.html" class="menu-item active">
+              <div>Home</div>
+              <div class="menu-underline"></div>
+            </a>
+            <a href="#explore" class="menu-item">Explore</a>
+            <a href="#travel" class="menu-item">Travel</a>
+            <a href="#blog" class="menu-item">Blog</a>
+            <a href="#pricing" class="menu-item">Pricing</a>
+          </nav>
+          <div class="auth-buttons">
+            <a href="#login" class="login-btn">Login</a>
+            <a href="#signup" class="signup-btn">Sign up</a>
+          </div>
+        </header>
+
+        <!-- Hero Content -->
+        <div class="hero-title">
+          <h1 class="hero-heading">
+            Start your unforgettable <br />
+            journey with us.
+          </h1>
+          <p class="hero-subtitle">
+            The best travel for your jouney begins now
+          </p>
+        </div>
+
+        <!-- Booking Form -->
+        <form class="booking-form" action="#" method="post">
+          <div class="booking-columns">
+            <div class="booking-column">
+              <label for="destination" class="booking-label">Destination</label>
+              <select id="destination" name="destination" class="booking-input">
+                <option value="dubai" selected>Dubai</option>
+                <option value="paris">Paris</option>
+                <option value="london">London</option>
+                <option value="rome">Rome</option>
+                <option value="bali">Bali</option>
+              </select>
+            </div>
+            <div class="booking-column">
+              <label for="persons" class="booking-label">Person</label>
+              <div class="booking-input booking-person">
+                <input
+                  type="number"
+                  id="persons"
+                  name="persons"
+                  min="1"
+                  max="10"
+                  value="2"
+                />
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/6e2aeab1a7516a795239eb96aedee9178ddfc6f8d5c7f44ea73364500b60b0a2?placeholderIfAbsent=true"
+                  alt="Person icon"
+                />
+              </div>
+            </div>
+            <div class="booking-column">
+              <label for="checkin" class="booking-label">Check in</label>
+              <div class="booking-input booking-date">
+                <input
+                  type="date"
+                  id="checkin"
+                  name="checkin"
+                  value="2020-09-17"
+                />
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/46361e650ccb7ea561bbe309f704a8d39ce9ce2bd35fc2a461c5ea8ae1684cd9?placeholderIfAbsent=true"
+                  alt="Calendar icon"
+                />
+              </div>
+            </div>
+            <div class="booking-column">
+              <label for="checkout" class="booking-label">Check out</label>
+              <div class="booking-input booking-date">
+                <input
+                  type="date"
+                  id="checkout"
+                  name="checkout"
+                  value="2020-10-17"
+                />
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/1d7d0658cd8270a384dd216ad5c544cc073e69a178297962fd8568b281947c02?placeholderIfAbsent=true"
+                  alt="Calendar icon"
+                />
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="book-now-btn">
+            <div>Book Now</div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/29ac1452106b27a21503001cce1f4484695fc30be8553bbfcb78a82e324bb54f?placeholderIfAbsent=true"
+              alt="Arrow icon"
+            />
+          </button>
+        </form>
+
+        <!-- Slider Navigation -->
+        <div class="slider-nav">
+          <div class="slider-dots">
+            <button class="slider-dot active" aria-label="Slide 1"></button>
+            <button class="slider-dot" aria-label="Slide 2"></button>
+            <button class="slider-dot" aria-label="Slide 3"></button>
+            <button class="slider-dot" aria-label="Slide 4"></button>
+            <button class="slider-dot" aria-label="Slide 5"></button>
+          </div>
+          <div class="slider-arrows">
+            <button aria-label="Previous slide">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/507a5059f5ec37bd2a78faa15b42b76b1ca3c01184d6860c3d4c3b67ea60edb7?placeholderIfAbsent=true"
+                alt="Up arrow"
+              />
+            </button>
+            <button aria-label="Next slide">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/da64dd00bce922ce4c943b5fd772165eb8d66ba8f25cc922802660fe5e9ba8d8?placeholderIfAbsent=true"
+                alt="Down arrow"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular Destinations Section -->
+      <section id="explore" class="destinations-section">
+        <div class="section-header">
+          <div class="title-block">
+            <h2 class="section-heading">
+              <div>Popular Destinations</div>
+              <div class="heading-underline"></div>
+            </h2>
+            <p class="section-subheading">
+              Most popular destinations around the world, from historical places
+              to natural wonders.
+            </p>
+          </div>
+          <div class="nav-arrows">
+            <button class="nav-arrow prev" aria-label="Previous destinations">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/8659ccd708510b094d491552d990b299e6563654cff4778275dec20590853eab?placeholderIfAbsent=true"
+                alt="Previous"
+              />
+            </button>
+            <button class="nav-arrow next" aria-label="Next destinations">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/d63125c13db3e2140fbcdb5d6c0c80e95e490fcee5616c83ec74ab25f83783f7?placeholderIfAbsent=true"
+                alt="Next"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="destinations-grid">
+          <a href="#berlin" class="destination-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/af04fa09739609f46a1ea4ded572efff7c6f766698aa03c11adea62d8ce5392a?placeholderIfAbsent=true"
+              alt="Monument of Berlin"
+              class="destination-img"
+            />
+            <div class="destination-info">
+              <h3 class="destination-name">Monument of Berlin</h3>
+              <div class="destination-location">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/942822457803d6cdee18b9592fb25d08d5c0da4464c90b54b9d4c9feedff192a?placeholderIfAbsent=true"
+                  alt="Location icon"
+                />
+                <div>Berlin, Germany</div>
+              </div>
+            </div>
+          </a>
+          <a href="#london" class="destination-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/c301334a600fc7b924bfe20618efe8e2cf4d8fa13dac3fffb9a9482f3551f98d?placeholderIfAbsent=true"
+              alt="Millennium Bridge"
+              class="destination-img"
+            />
+            <div class="destination-info">
+              <h3 class="destination-name">Millennium Bridge</h3>
+              <div class="destination-location">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/942822457803d6cdee18b9592fb25d08d5c0da4464c90b54b9d4c9feedff192a?placeholderIfAbsent=true"
+                  alt="Location icon"
+                />
+                <div>London, United Kingdom</div>
+              </div>
+            </div>
+          </a>
+          <a href="#venice" class="destination-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/4368d0afdd4d13a0e0f669b84e017a0fe832367d7a8f866b1aca96d8b26eebee?placeholderIfAbsent=true"
+              alt="Rialto Bridge"
+              class="destination-img"
+            />
+            <div class="destination-info">
+              <h3 class="destination-name">Rialto Bridge</h3>
+              <div class="destination-location">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/942822457803d6cdee18b9592fb25d08d5c0da4464c90b54b9d4c9feedff192a?placeholderIfAbsent=true"
+                  alt="Location icon"
+                />
+                <div>Venice, Italy</div>
+              </div>
+            </div>
+          </a>
+          <a href="#bali" class="destination-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/ff2a6787134427a0be1ded05fecae6668f2cad96231073f497bce65b6ed89cf8?placeholderIfAbsent=true"
+              alt="Bali"
+              class="destination-img"
+            />
+            <div class="destination-info">
+              <h3 class="destination-name">Bali</h3>
+              <div class="destination-location">Thailand, Asia</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Special Offers Section -->
+      <section id="pricing" class="special-offers-section">
+        <div class="section-header reverse">
+          <div class="nav-arrows">
+            <button class="nav-arrow prev" aria-label="Previous offers">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/8659ccd708510b094d491552d990b299e6563654cff4778275dec20590853eab?placeholderIfAbsent=true"
+                alt="Previous"
+              />
+            </button>
+            <button class="nav-arrow next" aria-label="Next offers">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/d63125c13db3e2140fbcdb5d6c0c80e95e490fcee5616c83ec74ab25f83783f7?placeholderIfAbsent=true"
+                alt="Next"
+              />
+            </button>
+          </div>
+          <div class="title-block right-aligned">
+            <h2 class="section-heading">
+              <div>Special Offer</div>
+              <div class="heading-underline"></div>
+            </h2>
+            <p class="section-subheading">
+              Check out our special offer and discounts
+            </p>
+          </div>
+        </div>
+
+        <div class="offers-grid">
+          <article class="offer-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/ca78aa003d54b9e235c365d07226e426c90026c155c062eb98fd68c2804af8d9?placeholderIfAbsent=true"
+              alt="Lisbon, Portugal"
+              class="offer-img"
+            />
+            <div class="offer-details">
+              <div class="offer-header">
+                <h3 class="offer-location">Lisbon, Portugal</h3>
+                <div class="rating" aria-label="5 out of 5 stars">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <p class="offer-description">
+                5 nights and 4 days in 5 star hotel, breakfast and lunch
+                included. Very popular during the renaissance. Passage and going
+                through the cites of the world in classical literature.
+              </p>
+              <div class="offer-footer">
+                <div class="offer-price">
+                  <div class="price-label">From</div>
+                  <div class="price-value">€500</div>
+                </div>
+                <a href="#lisbon-details" class="details-btn">Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="offer-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/0e1ec79d6b2664871c06b04fabf35fc5ecfaae89808ea5e56573e00be2e25383?placeholderIfAbsent=true"
+              alt="Athens, Greece"
+              class="offer-img"
+            />
+            <div class="offer-details">
+              <div class="offer-header">
+                <h3 class="offer-location">Athens, Greece</h3>
+                <div class="rating" aria-label="5 out of 5 stars">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/7d72e6659c0aa7a1065cea6f88fc1c48634fa619276c56bede6ee84b0987a15b?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/7d72e6659c0aa7a1065cea6f88fc1c48634fa619276c56bede6ee84b0987a15b?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/7d72e6659c0aa7a1065cea6f88fc1c48634fa619276c56bede6ee84b0987a15b?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/7d72e6659c0aa7a1065cea6f88fc1c48634fa619276c56bede6ee84b0987a15b?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/7d72e6659c0aa7a1065cea6f88fc1c48634fa619276c56bede6ee84b0987a15b?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <p class="offer-description">
+                5 nights and 4 days in 5 star hotel, breakfast and lunch
+                included. Very popular during the renaissance. Passage and going
+                through the cites of the world in classical literature.
+              </p>
+              <div class="offer-footer">
+                <div class="offer-price">
+                  <div class="price-label">From</div>
+                  <div class="price-value">€800</div>
+                </div>
+                <a href="#athens-details" class="details-btn">Details</a>
+              </div>
+            </div>
+          </article>
+          <article class="offer-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/dd638f45f133fea1a3b7cadfd6ecd64134f3013c4e846b949622faf2d4941c79?placeholderIfAbsent=true"
+              alt="Rome, Italy"
+              class="offer-img"
+            />
+            <div class="offer-details">
+              <div class="offer-header">
+                <h3 class="offer-location">Rome, Italy</h3>
+                <div class="rating" aria-label="5 out of 5 stars">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/72890ba886b65701e41c38b6eda51002d2aa3246645a3714d9390c02cd3777eb?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/72890ba886b65701e41c38b6eda51002d2aa3246645a3714d9390c02cd3777eb?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/72890ba886b65701e41c38b6eda51002d2aa3246645a3714d9390c02cd3777eb?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/72890ba886b65701e41c38b6eda51002d2aa3246645a3714d9390c02cd3777eb?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/72890ba886b65701e41c38b6eda51002d2aa3246645a3714d9390c02cd3777eb?placeholderIfAbsent=true"
+                    alt="Star"
+                  />
+                </div>
+              </div>
+              <p class="offer-description">
+                5 nights and 4 days in 5 star hotel, breakfast and lunch
+                included. Very popular during the renaissance. Passage and going
+                through the cites of the world in classical literature.
+              </p>
+              <div class="offer-footer">
+                <div class="offer-price">
+                  <div class="price-label">From</div>
+                  <div class="price-value">€750</div>
+                </div>
+                <a href="#rome-details" class="details-btn">Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="blog-section">
+        <div class="section-header">
+          <div class="title-block">
+            <h2 class="section-heading">
+              <div>Our Blog</div>
+              <div class="heading-underline"></div>
+            </h2>
+            <p class="section-subheading">
+              An insight the incredible experience in the world
+            </p>
+          </div>
+        </div>
+
+        <article class="blog-content">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/75958642f8b7e33ce792dc8dfce852155ecc0e86197642a68ddabb827e68aa45?placeholderIfAbsent=true"
+            alt="Beautiful Italy"
+            class="blog-image"
+          />
+          <div class="blog-text">
+            <h3 class="blog-title">
+              Beautiful Italy<br />
+              Let's travel
+            </h3>
+            <p class="blog-excerpt">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness. No one rejects, dislike, or avoids plasure itself,
+              because it is pleasure, but because those who do not know how to
+              pursue pleasure rationally encounter consequences that are
+              extremly painful. Nor again is there anyone who loves or pursues.
+            </p>
+            <a href="#read-more-italy" class="read-more">
+              <div>Read More</div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/6e0744a77cfa152ee34c55db705b5074513fd8d57379dc47761ecc1c87aa29bc?placeholderIfAbsent=true"
+                alt="Read more"
+              />
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Trip Planners Section -->
+      <section id="travel" class="trip-planners-section">
+        <div class="trip-planners-block">
+          <div class="trip-title">
+            <div class="title-block">
+              <h2 class="section-heading">
+                <div>Trip Planners</div>
+                <div class="heading-underline"></div>
+              </h2>
+              <p class="trip-description">
+                20 years from now you will be more disappointed by the things
+                that you didn't do. Stop regretting and start travelling, start
+                throwing off the bowlines.
+              </p>
+              <div class="trip-btn-container">
+                <div class="square-dark"></div>
+                <a href="#all-trip-plans" class="view-plans-btn"
+                  >View all trip plans</a
+                >
+                <div class="square-gray"></div>
+              </div>
+            </div>
+          </div>
+          <div class="trip-content">
+            <a href="#trip1" class="trip-image-link">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/5026ac7c5472aad311c902c529a0999896a853e5f59b295be09ddfb99efd9b65?placeholderIfAbsent=true"
+                alt="Trip"
+                class="trip-image"
+              />
+            </a>
+            <div class="trip-card">
+              <a href="#paris-tour">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/0b29748c8895fa389b23a378b1299b124a984ee1bc673e7131a2a350a5579e50?placeholderIfAbsent=true"
+                  alt="Paris City Tour"
+                  class="trip-card-image"
+                />
+                <div class="trip-card-content">
+                  <div class="trip-card-header">
+                    <div class="trip-type">Guided Tour</div>
+                    <div class="trip-price">€95/Day</div>
+                  </div>
+                  <h3 class="trip-name">Paris City Tour</h3>
+                  <div class="trip-card-footer">
+                    <div class="rating" aria-label="5 out of 5 stars">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                        alt="Star"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                        alt="Star"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                        alt="Star"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                        alt="Star"
+                      />
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                        alt="Star"
+                      />
+                    </div>
+                    <div class="trip-duration">7 Days tour</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <a href="#trip2" class="trip-image-link">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/25b8e89b0cfffe1ca17f8eb21b8a01ce1e0f090ebaa539f0f7a44cfb22f9fbad?placeholderIfAbsent=true"
+                alt="Trip"
+                class="trip-image"
+              />
+            </a>
+            <a href="#trip3" class="trip-image-link">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/23d464824155a63d2b75c457059a0aad560e962c96704754730e63fa6dd49223?placeholderIfAbsent=true"
+                alt="Trip"
+                class="trip-image"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="gallery-section">
+        <div class="section-header">
+          <div class="title-block">
+            <h2 class="section-heading">
+              <div>Destination Gallery</div>
+              <div class="heading-underline"></div>
+            </h2>
+            <p class="section-subheading">Our photo gallery on trip</p>
+          </div>
+          <div class="nav-arrows">
+            <button class="nav-arrow prev" aria-label="Previous gallery">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/8659ccd708510b094d491552d990b299e6563654cff4778275dec20590853eab?placeholderIfAbsent=true"
+                alt="Previous"
+              />
+            </button>
+            <button class="nav-arrow next" aria-label="Next gallery">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/d63125c13db3e2140fbcdb5d6c0c80e95e490fcee5616c83ec74ab25f83783f7?placeholderIfAbsent=true"
+                alt="Next"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <a href="#gallery1" class="gallery-link">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/aba3321d366b35b9022afdb414c421c6672f5c646e4eaf9c7c75a4c02a51129e?placeholderIfAbsent=true"
+              alt="Gallery image"
+              class="gallery-img"
+            />
+          </a>
+          <a href="#gallery2" class="gallery-link">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/db70557d446b455acf761b61fccbe4c9e50b5e3b765a3026b76abfa64f18ee55?placeholderIfAbsent=true"
+              alt="Gallery image"
+              class="gallery-img"
+            />
+          </a>
+          <a href="#gallery3" class="gallery-link">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/d7be54da88a2f93f1e80e1d0b0170fd2e69360427c34daee8347ba4dad20ce13?placeholderIfAbsent=true"
+              alt="Gallery image"
+              class="gallery-img"
+            />
+          </a>
+          <a href="#gallery4" class="gallery-link">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/12876523cfc212085b77b9eea83e5c662088fb26eb30007e59c42a3cc297a99c?placeholderIfAbsent=true"
+              alt="Gallery image"
+              class="gallery-img"
+            />
+          </a>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials-section">
+        <div class="section-header">
+          <div class="title-block">
+            <h2 class="section-heading">
+              <div>Traveler's Experiences</div>
+              <div class="heading-underline"></div>
+            </h2>
+            <p class="section-subheading">
+              Here some awesome feedback from our travelers
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/420d1f6ee5d25e266a18c87374ccc329c341d0a1189134a338fcd3bdaed5051b?placeholderIfAbsent=true"
+              alt="John Doe"
+              class="testimonial-avatar"
+            />
+            <blockquote class="testimonial-text">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness.
+            </blockquote>
+            <div class="rating" aria-label="5 out of 5 stars">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+            </div>
+            <div class="testimonial-author">
+              <cite class="author-name">John Doe</cite>
+              <div class="author-title">Accountant</div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/66bed0ac591af184852c9f82696805e37ceb2e7d885a641e6af770d9f22f1445?placeholderIfAbsent=true"
+              alt="John Smith"
+              class="testimonial-avatar"
+            />
+            <blockquote class="testimonial-text">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness.
+            </blockquote>
+            <div class="rating" aria-label="5 out of 5 stars">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+            </div>
+            <div class="testimonial-author">
+              <cite class="author-name">John Smith</cite>
+              <div class="author-title">Journalist, HWO News</div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/d9c6039ad369855c0358ab3b5ac635d7dc0b5c4a913816c3311adeb73348d28d?placeholderIfAbsent=true"
+              alt="Tamara Bellis"
+              class="testimonial-avatar"
+            />
+            <blockquote class="testimonial-text">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system and expound the actual teachings of the
+              great explorer of the truth, the master- builder of human
+              happiness.
+            </blockquote>
+            <div class="rating" aria-label="5 out of 5 stars">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/775c0fc913eb59add84e92ecd3d1f9eb96e449c984a86c9c04c98533a9281561?placeholderIfAbsent=true"
+                alt="Star"
+              />
+            </div>
+            <div class="testimonial-author">
+              <cite class="author-name">Tamara Bellis</cite>
+              <div class="author-title">Managing Director, JTH</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="nav-arrows testimonial-arrows">
+          <button class="nav-arrow prev" aria-label="Previous testimonial">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/8659ccd708510b094d491552d990b299e6563654cff4778275dec20590853eab?placeholderIfAbsent=true"
+              alt="Previous"
+            />
+          </button>
+          <button class="nav-arrow next" aria-label="Next testimonial">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/d63125c13db3e2140fbcdb5d6c0c80e95e490fcee5616c83ec74ab25f83783f7?placeholderIfAbsent=true"
+              alt="Next"
+            />
+          </button>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <div class="newsletter-container">
+        <h2 class="newsletter-title">Our Newsletter</h2>
+        <form class="newsletter-form" action="#subscribe" method="post">
+          <div class="newsletter-input-group">
+            <label for="email" class="newsletter-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              class="newsletter-input"
+            />
+          </div>
+          <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="index.html" class="logo-container">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/092ff95052aa88c43faf4042b41cbbbe210bf75dc07d2b1eb4e5da71dacc5abc?placeholderIfAbsent=true"
+                alt="Travellian Logo"
+              />
+            </a>
+            <div class="copyright">
+              Copyright © Travellian 2020 All rights reserved
+            </div>
+          </div>
+          <nav class="footer-menu">
+            <h3 class="footer-heading">Menu</h3>
+            <ul class="footer-links">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="#explore" class="footer-link">Explore</a></li>
+              <li><a href="#travel" class="footer-link">Travel</a></li>
+              <li><a href="#blog" class="footer-link">Blog</a></li>
+              <li><a href="#pricing" class="footer-link">Pricing</a></li>
+            </ul>
+          </nav>
+          <div class="footer-info">
+            <h3 class="footer-heading">Information</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#destinations" class="footer-link">Destinations</a>
+              </li>
+              <li><a href="#supports" class="footer-link">Supports</a></li>
+              <li>
+                <a href="#terms" class="footer-link">Terms & Conditions</a>
+              </li>
+              <li><a href="#privacy" class="footer-link">Privacy</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3 class="footer-heading">Contact Info</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="tel:+123456789" class="footer-link">+123 456 789</a>
+              </li>
+              <li>
+                <a href="mailto:info@travellian.com" class="footer-link"
+                  >info@travellian.com</a
+                >
+              </li>
+              <li>
+                <address class="footer-link">1245, New Yourk, USA</address>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3 class="footer-heading">Follow us on</h3>
+            <div class="social-icons">
+              <a href="#facebook" aria-label="Facebook">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/3e4ea39f60eff11b4384606d935573debd928999743c1c388c1834d3f628133c?placeholderIfAbsent=true"
+                  alt="Facebook"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#twitter" aria-label="Twitter">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/9aa2f3ec497a40d32f2634435850f8e528afdf3d46e00fd993bbf47cc8a65459?placeholderIfAbsent=true"
+                  alt="Twitter"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#instagram" aria-label="Instagram">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/f6e24dcb564e7330395482bed878e8cf0957763edcd3fb855b78423745a28707?placeholderIfAbsent=true"
+                  alt="Instagram"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#linkedin" aria-label="LinkedIn">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/YJIGb4i01jvw0SRdL5Bt/1d089d1547809a62a4fd07e6dcc5e7944886b4920787719842142aa91626fd6a?placeholderIfAbsent=true"
+                  alt="LinkedIn"
+                  class="social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
