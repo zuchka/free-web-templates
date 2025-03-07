@@ -1,0 +1,118 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* App-specific styles */
+.app {
+  display: flex;
+  min-height: 100vh;
+  background-color: #081028;
+}
+
+/* Table row styles */
+table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Button hover effects */
+.add-user-btn:hover {
+  background-color: #a82dd6;
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+.get-template-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(203, 60, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+/* Status indicators */
+.status-online,
+.status-offline {
+  position: relative;
+  padding-left: 16px;
+}
+
+.status-online::before,
+.status-offline::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.status-online::before {
+  background-color: var(--status-online);
+}
+
+.status-offline::before {
+  background-color: var(--status-offline);
+}
+
+/* Focus styles for better accessibility */
+.checkbox:focus,
+.nav-item:focus,
+button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Animation for action buttons */
+.action-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.action-btn:hover svg {
+  transform: scale(1.2);
+}
+
+/* Sorting indicator animation */
+thead th::after {
+  transition: all 0.2s ease;
+}
+
+thead th:hover::after {
+  opacity: 0.7;
+}
+
+/* Sorting feedback */
+thead th {
+  transition: color 0.2s ease;
+}
+
+thead th.sorting-asc,
+thead th.sorting-desc {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Custom scrollbar for the app */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(203, 60, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(203, 60, 255, 0.5);
+}
